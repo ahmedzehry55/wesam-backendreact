@@ -1,0 +1,74 @@
+// programs css
+.programs_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.programs_container_inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  background:#c8c8c9;
+}
+.programs_container_inner_taple_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.programs_container_inner_table {
+    width: 100%;
+}
+.programs_container_inner_table_tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid ;
+}
+.programs_container_inner_table_tr_th {
+}
+.programs_container_inner_table_tr_td {
+}
+.programs_container_inner_table_tr_td_button_delete {
+}
+.programs_container_inner_table_tr_td_button_edit {
+}
+.programs_container_inner_table_tr_td_button_show {
+}
+.programs_container_inner_form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: center;
+    gap: 20px;
+}
+.programs_container_inner_form_div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: black;
+}
+.programs_container_inner_form_input_title{
+    width:500px;
+    height: 38px;
+    background: white;
+}
+.programs_container_inner_form_input{
+    width:270px;
+    height: 38px;
+    background: white;
+}
+.programs_container_inner_form_input_submit{
+    display: block;
+    width: 100%;
+}
+input{
+    color: black;
+}
+.tab_button{
+    direction: ltr;
+}
