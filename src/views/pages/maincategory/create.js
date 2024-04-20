@@ -3,19 +3,24 @@ import { AppFooter, AppHeader, AppSidebar, DocsExample } from '../../../componen
 import axios from 'axios'
 import { CButton, CForm, CFormInput, CFormLabel, CFormTextarea } from '@coreui/react'
 export default function programs() {
-  const [title, setname] = useState('')
+  const [name, setname] = useState('')
   const [image, setimage] = useState('')
+  const [pathname, setpath] = useState('')
+  const [title, settitle] = useState(name)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
       await axios.post('http://localhost:4000/api/maincategory', {
-        title,
+        name,
         image,
+        pathname,
+        title
       })
 
       setname('')
       setimage('')
+      setpath('')
     } catch (error) {
       console.log(error)
     }
@@ -34,6 +39,12 @@ export default function programs() {
                 type="text"
                 id="exampleFormControlInput1"
                 onChange={(e) => setname(e.target.value)}
+              />
+              <CFormLabel htmlFor="exampleFormControlInput1"> مسار الباقة</CFormLabel>
+              <CFormInput
+                type="text"
+                id="exampleFormControlInput1"
+                onChange={(e) => setpath(e.target.value)}
               />
             </div>
             <div className="mb-3">
