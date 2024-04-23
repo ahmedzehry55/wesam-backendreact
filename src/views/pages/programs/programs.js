@@ -19,7 +19,7 @@ import {
 export default function programs() {
   const [data, setData] = useState([])
   useEffect(() => {
-    fetch('http://localhost:4000/api/aprogrammes')
+    fetch('http://wesamelnagah.com:4000/api/aprogrammes')
       .then((res) => res.json())
       .then((data) => {
         setData(data.data)
@@ -28,7 +28,7 @@ export default function programs() {
   const deletehandle = async (e, { id }) => {
     e.preventDefault()
     try {
-      await axios.delete(`http://localhost:4000/api/aprogrammes/${id}`)
+      await axios.delete(`http://wesamelnagah.com:4000/api/aprogrammes/${id}`)
     } catch (e) {
       console.log(e)
     }

@@ -27,7 +27,7 @@ export default function programs() {
     e.preventDefault();
     try {
       // Make an API request to send the form data
-      await axios.post('http://localhost:4000/api/aprogrammes', {
+      await axios.post('http://wesamelnagah.com:4000/api/aprogrammes', {
         cites,
       });
       // Reset the form fields after successful submission

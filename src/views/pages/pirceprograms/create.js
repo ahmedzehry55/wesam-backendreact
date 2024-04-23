@@ -32,7 +32,7 @@ export default function programs() {
   const [active, setactive] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/category')
+    fetch('http://wesamelnagah.com:4000/api/category')
       .then((res) => res.json())
       .then((data) => {
         setData(data.data)
@@ -40,7 +40,7 @@ export default function programs() {
   }, [])
   console.log(data)
   useEffect(() => {
-    fetch('http://localhost:4000/api/routespage')
+    fetch('http://wesamelnagah.com:4000/api/routespage')
       .then((res) => res.json())
       .then((data) => {
         setroutesData(data.data)
@@ -51,7 +51,7 @@ export default function programs() {
     e.preventDefault()
     try {
       // Make an API request to send the form data
-      await axios.post('http://localhost:4000/api/priceprogrammes', {
+      await axios.post('http://wesamelnagah.com:4000/api/priceprogrammes', {
         name,
         person,
         price,
