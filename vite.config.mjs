@@ -3,13 +3,13 @@ import react from '@vitejs/plugin-react'
 import path from 'node:path'
 import autoprefixer from 'autoprefixer'
 
-export default defineConfig(({ mode }) => {
+  export default defineConfig(({ mode }) => {
   // Load .env
   const env = loadEnv(mode, process.cwd(), '')
   process.env = { ...process.env, ...env }
 
   return {
-    base: './',
+    base: '/admin',
     build: {
       outDir: 'build',
     },
